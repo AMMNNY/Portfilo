@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--secondary);
+  color: var(--title);
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* زيادة المسافة بين الأسطر */
+  align-items: center;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* المسافة بين الأيقونة والنص */
+  font-size: 16px;
+  color: var(--title);
+}
+
+.footer-item .icon {
+  font-size: 18px; /* تكبير الأيقونات شوي */
+}
+
+.footer-item .text-link {
+  color: var(--bluevar);
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-item .text-link:hover {
+  color: var(--title);
+  text-decoration: underline;
+}
+
+/* Responsive: على الشاشات الكبيرة، اجعلها أفقية */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
