@@ -38,9 +38,9 @@
 }
 
 /* Responsive: على الشاشات الكبيرة، اجعلها أفقية */
-@media (min-width: 768px) {
+@media (max-width: 1000px) {
   .footer-content {
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px !important;
   }
 }
