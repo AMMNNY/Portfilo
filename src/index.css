@@ -8,6 +8,17 @@
   --bluevar:rgb(93 188 252);
 }
 html{
+  scroll-behavior: smooth;
+}
+.light{
+  --primary : #ffffff;
+  --secondary: #ffffff;
+  --border : rgba(240, 220, 130, 0.5);
+  --title: #000000; 
+  --subtitle: #fff9e6;   
+  --bluevar: #f9e88f;           
+}
+html{
   box-sizing: border-box;
 }
 *,*:before,*:after {box-sizing: inherit;}
@@ -22,6 +33,7 @@ body{
 }
 .container{
   border:2px solid var(--border);
+  position: relative;
   width: 80%;
   margin: 0 auto;
   background-color:var(--secondary) ;

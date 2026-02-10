@@ -61,3 +61,13 @@
         display: none;
     }
 }
+.light .word h1 {
+  color: black;
+}
+
+.light .word p {
+  color: black;
+}
+.light .icon{
+    color:rgb(0, 149, 246);
+}

@@ -57,3 +57,17 @@ img{
         margin: 0px;
     }
 }
+.light .Side-button .btn {
+    background-color: #ffffff !important;     /* خلفية بيضاء */
+    color: #000000 !important;               /* نص أسود */
+    border: 2px solid rgba(240,220,130,0.7) !important; /* حدود ذهبي فاتح */
+    border-radius: 5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.light .Side-button .btn:hover {
+    background-color: rgba(240,220,130,0.2) !important; /* تأثير hover فاتح */
+    border-color: rgba(240,220,130,1) !important;      /* حدود أقوى عند hover */
+    transform: translateY(-2px) !important;
+}

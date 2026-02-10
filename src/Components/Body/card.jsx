@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import "./card.css"
 function card(image, name , dis) {
     return(
@@ -11,9 +10,7 @@ function card(image, name , dis) {
                 </div>
                 <div className='Projet-name'>
                     <h3>{name}</h3>
-                    <p>{dis}</p>
-                    <button style={{ background: "rgb(24 24 27)", border: "none", padding: "0 10px" }}>
-                        <GitHubIcon sx={{ color: "white" }} /></button>
+                    <p style={{ whiteSpace: "pre-line" }}>{dis}</p>
                 </div>
             </div>
         </div>
@@ -23,7 +20,7 @@ function card(image, name , dis) {
 export default function OutlinedCard({image ,name,dis}) {
     return (
         
-        <Card
+        <Card className='cardPro'
         variant="outlined"
             sx={{
             borderRadius:"10px",

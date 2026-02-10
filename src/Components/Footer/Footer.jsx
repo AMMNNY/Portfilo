@@ -3,8 +3,8 @@ import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"200px"}} className="footer-content">
+    <footer style={{marginBottom:"10px"}} id="contact">
+      <div className="footer-content">
         <p className="footer-item">
           <span className="icon"><PhoneAndroidIcon/></span>
           <span className="text">0785090661</span>

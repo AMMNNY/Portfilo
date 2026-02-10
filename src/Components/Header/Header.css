@@ -33,7 +33,6 @@ ul{
     display: none;
 }
 .condio{
-    width: 100%;
     background-color: var(--secondary);
 }
 .condio ul li{
@@ -46,8 +45,11 @@ ul{
 .Dialogcss .MuiDialog-paper {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 42%;
     transform: translateX(-50%);
+    background-color: rgb(24 24 27);
+    width: 350px;
+    overflow: hidden;
 }
 .closeIcon{
     width: 100% !important;
@@ -56,9 +58,34 @@ ul{
     align-items: start;
     justify-content: end;
 }
+
 @media(max-width: 750px){
     .nav{display: none;}
     .container-header .burger{
     display: block;
 }
+}
+.light .control{
+    border: none !important;
+}
+.light a{
+    color: black !important;
+}
+.light .closeIcon{
+    color: black;
+    border: none;
+}
+.light .theme-toggle{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease !important;
+}
+.light .burger{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease !important;
 }

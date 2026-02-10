@@ -15,7 +15,7 @@ export default function () {
         }
     },[state.succeeded])
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center",gap:"10px" }}>
+        <div id="email" style={{ display: "flex", flexDirection: "column", alignItems: "center",gap:"10px" }}>
             <div>
             <Snackbar
             open={open}
@@ -29,7 +29,7 @@ export default function () {
                     onSubmit={handleSubmit}
                     style={{ display: "flex", flexDirection: "column", gap: "10px", justifyContent: "space-between" }}
                     className="textField">
-            <div>
+            <div className="word">
             <h1><EmailIcon /> Get in Touch</h1>
             <p>
             Interested in working together or have a question?
@@ -108,7 +108,7 @@ export default function () {
                 errors={state.errors}
             />
 
-                <Button style={{border:"solid",marginBottom:"10px"}} type="submit" disabled={state.submitting}>Submit</Button>
+                <Button className="submit" style={{border:"solid",marginBottom:"10px"}} type="submit" disabled={state.submitting}>Submit</Button>
             </form>
             <div className="video">
                 <DotLottieReact

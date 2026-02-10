@@ -11,3 +11,56 @@
         padding: 20px;
     }
 }
+/* Email & Message TextFields - Light Mode */
+.light .MuiTextField-root {
+    background-color: #ffffff !important;
+    border-radius: 5px !important;                 
+    /* border: 1px solid rgba(240,220,130,0.7) !important; */
+}
+
+/* Label */
+.light .MuiInputLabel-root {
+    color: #000000 !important;                      
+}
+
+.light .MuiInputLabel-root.Mui-focused {
+    color: #f7e57f !important;                    
+}
+
+/* النص المكتوب */
+.light .MuiOutlinedInput-input,
+.light .MuiInputBase-input {
+    color: #000000 !important;                     
+}
+
+/* الخطوط تحت Standard TextField */
+.light .MuiInput-underline:before {
+    border-bottom: 1px solid rgba(240,220,130,0.7) !important;
+}
+
+.light .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 1px solid rgba(240,220,130,0.9) !important;
+}
+
+.light .MuiInput-underline:after {
+    border-bottom: 2px solid #f7e57f !important;
+}
+
+
+.light .submit {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid rgba(240,220,130,0.7) !important;
+    border-radius: 5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.light .MuiButton-root:hover {
+    background-color: rgba(240,220,130,0.2) !important;
+    border-color: rgba(240,220,130,1) !important;
+    transform: translateY(-2px) !important;
+}
+.light .word{
+    color: #000000;
+}

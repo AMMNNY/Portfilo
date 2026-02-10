@@ -8,14 +8,14 @@ import XIcon from '@mui/icons-material/X';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 export default function () {
     return (
-        <div>
+        <div id="about">
             <div className="cont">
                 <div className="disc">
                     <div style={{display:"flex"}}>
                         <img style={{ width: "75px", height: "75px" }} src={Image} alt="" />
-                        <div style={{display:"flex",alignItems:"end"}}><VerifiedIcon /></div>
+                        <div style={{display:"flex",alignItems:"end"}}><VerifiedIcon className="icon" /></div>
                     </div>
-                        <section>
+                        <section className="word">
                             <h1>Front-End Developer & Aspiring Full-Stack Engineer</h1>
                             <p>
                             I create responsive, accessible, and visually clean web interfaces with a
@@ -31,7 +31,7 @@ export default function () {
                     </section>
                     <div className="links">
                         <ul>
-                            <li style={{marginLeft:0}}><a target="_blank" href="https://x.com/ammnny_?s=11"><XIcon /></a></li>
+                            <li style={{marginLeft:0}}><a target="_blank" href="https://x.com/ammnny_?s=11"><XIcon/></a></li>
                             <li><a target="_blank" href="https://www.instagram.com/ammnny1/"><InstagramIcon /></a></li>
                             <li><a target="_blank" href="https://www.linkedin.com/in/ayman-zahran-b9b702238/"><LinkedInIcon /></a></li>
                             <li><a target="_blank" href="https://github.com/AMMNNY"><GitHubIcon /></a></li>
