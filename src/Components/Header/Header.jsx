@@ -6,11 +6,10 @@ import { useEffect, useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 export default function () {
-    const [scroll, setScroll] = useState(0);
-    const [theme , setTheme]=useState(JSON.parse(localStorage.getItem("theme") ?? "dark"))
+
+    const [theme , setTheme]=useState(localStorage.getItem("theme") ?? "dark")
     const [open, setOpen] = useState(false)
     useEffect(() => {
-        localStorage.setItem("theme",JSON.stringify(theme))
         if (theme ==="light") {
         document.body.classList.remove("dark")
         document.body.classList.add("light")
@@ -57,7 +56,12 @@ export default function () {
                     </ul>
                     
                 </div>    
-                <Button className="theme-toggle" onClick={()=>{setTheme(theme === "light" ? "dark" :"light")}}><Brightness4Icon ></Brightness4Icon> </Button>
+                    <Button className="theme-toggle"
+                        onClick={() => {
+                            localStorage.setItem("theme" , theme === "dark" ? "light" : "dark")
+                            setTheme(localStorage.getItem("theme"))
+                        }}>
+                        <Brightness4Icon ></Brightness4Icon> </Button>
             </div>   
             </div>
         </div>
