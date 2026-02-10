@@ -1,14 +1,14 @@
 import "./Body.css"
 import Button from '@mui/material/Button';
 import Card from "./card"
-import Color from "./Image/Color.webp";
+import Color from "./Image/Color.webp"
 import HangMan from "./Image/HangMan.jpg";
 import ImageEditor from "./Image/ImageEditor.png";
 import Movie from "./Image/Movie.webp";
 import srollwebsites from "./Image/scroll-websites.png";
-import Shoppingvif from "./Image/Shoppingavif.avif";
-import Todolists from "./Image/Todolists.jpg";
-import Graduate from "./Image/Gradute.jpeg";
+import Shoppingavif from "./Image/Shoppingavif.avif";
+import TodoLists from "./Image/TodoLists.jpg";
+import Graduate  from "./Image/Gradute.jpeg";
 import { v4 as uuidv4 } from 'uuid';
 import Inventory from "./Image/Inventory.jpg";
 import Portfilo from "./Image/PortfiloImg.png"
@@ -60,14 +60,14 @@ export default function () {
   },
   {
     proName: "Shopping",
-    proImage: Shoppingvif,
+    proImage: Shoppingavif,
     proDesc: "Online shopping web \n application",
     type:"js",
     id:uuidv4(),
   },
   {
     proName: "Todo Lists",
-    proImage: Todolists,
+    proImage: TodoLists,
     proDesc: "Manage daily tasks efficiently",
     type:"react",
     id:uuidv4(),
